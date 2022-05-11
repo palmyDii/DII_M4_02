@@ -4,10 +4,25 @@ body {
 h1 {
     color: #E63946;
 }
-ul {
+
+/*ul {
     list-style-type: disc;
     color: #A8DADC;
+}*/
+
+ul { 
+    list-style-type: none;
+    color: #a7dadc;
 }
+ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #E63946; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -2em; /* Also needed for space (tweak if needed) */
+}
+
 ol {
     color: #F1FAEE;
 }
@@ -19,4 +34,8 @@ ol {
 #collie {
     color: #1D3557;
     background-color: #F1FAEE;  
+}
+
+ol > li {
+    font-weight: bold;
 }
