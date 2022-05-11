@@ -12,4 +12,11 @@ ol {
     color: #F1FAEE;
 }
 
-.non_sporting {background-color: #45789D;  }
+.non_sporting {
+    background-color: #45789D;  
+} 
+
+#collie {
+    color: #1D3557;
+    background-color: #F1FAEE;  
+}
