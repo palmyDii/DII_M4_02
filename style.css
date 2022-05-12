@@ -6,57 +6,38 @@ h1 {
     background-color: #685d79;
 }
 
-/*ul {
-    list-style-type: disc;
-    color: #A8DADC;
-}*/
-
 ul { 
     list-style-type: none;
-    color: #a7dadc;
+    color: white;
 }
+
 ul li::before {
-    content: "\2022";  /* \2022 Code/unicode for a bullet */
-    color: #E63946; /* Change the color */
-    font-weight: bold; /* If you want it to be bold */
-    display: inline-block; /* Needed to add space between the bullet and the text */
-    width: 1em; /* Also needed for space (tweak if needed) */
-    margin-left: -2em; /* Also needed for space (tweak if needed) */
-}
-
-
-ul > li:nth-child(odd) {
-    color: #E63946;
-}
-
-ol {
-    color: #F1FAEE;
-}
-/*
-ol li ::before {
-    content: ;
-    background-color: #d8737f;
-}
-*/
-
-.non_sporting {
-    background-color: #45789D;  
-} 
-
-#collie {
-    color: #1D3557;
-    background-color: #F1FAEE;  
+    content: "\2022";  
+    color: #fcbb6d; 
+    font-weight: bold; 
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -2em;
 }
 
 ol > li {
     font-weight: bold;
-    color: orange;
+    color: white;
+}
+ol {
+    background-color: #d8738f;
 }
 
-ol {
-    color: lavender;
+ol > li:nth-child(4n+1) {
+    background-color: #ab6c82;
+}
+ol > ul:nth-child(4n+2) {
+    background-color: #ab6c82;
 }
 
-ol {
-    color: red;
+ol > li:nth-child(4n-1) {
+    background-color: #685d79;
+}
+ol > ul:nth-child(4n+0) {
+    background-color: #685d79;
 }
