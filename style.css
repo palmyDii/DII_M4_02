@@ -1,64 +1,44 @@
-div {
-    /*1*/
-	color: black;
+body { 
+    background-color: #375c7a;
 }
-div p {
-    /*2*/
-	color: white;
+h1 {
+    color: #fcbb6d;
+    background-color: #685d79;
 }
-.div1 p {
-    /*11*/
-	color: orange;
+
+ul { 
+    list-style-type: none;
+    color: white;
 }
-div.div1 p {
-    /*12*/
-	color: red;
+
+ul li::before {
+    content: "\2022";  
+    color: #fcbb6d; 
+    font-weight: bold; 
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -2em;
 }
-#div1 p {
-    /*101*/
-	color: green;
+
+ol > li {
+    font-weight: bold;
+    color: white;
 }
-#x1 {
-    /*100*/
-	color: brown;
+ol {
+    background-color: #d8738f;
 }
-div #x1 {
-    /*101*/
-	color: red;
+
+ol > li:nth-child(4n+1) {
+    background-color: #ab6c82;
 }
-div p:first-child {
-    /*12*/
-	color: brown;
+ol > ul:nth-child(4n+2) {
+    background-color: #ab6c82;
 }
-.x2 {
-    /*10*/
-	color: teal;
+
+ol > li:nth-child(4n-1) {
+    background-color: #685d79;
 }
-div span {
-    /*2*/
-	color: yellow;
+ol > ul:nth-child(4n+0) {
+    background-color: #685d79;
 }
-div > span {
-    /*2*/
-	color: lightblue;
-}
-p span {
-    /*2*/
-	color: gold;
-}
-p #x2 {
-    /*101*/
-	color: purple;
-}
-p span.x2 {
-    /*12*/
-	color: beige;
-}
-p > .x2 {
-    /*11*/
-	color: maroon;
-}
-div > span {
-    /*2*/
-	color: blue;
-}
+
