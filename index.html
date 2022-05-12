@@ -1,57 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>American Kennel Club</h1>
-
-    <ol>
-        <li>Terriers</li>
-        <ul>
-            <li>Manchester Terrier</li>
-            <li>Staffordshire Terrier</li>
-        </ul>
-        
-        <li>Sportings</li>
-        <ul>
-            <li>Gloden Retriever</li>
-            <li>Labrador Retriever</li>
-        </ul>   
-        
-        <li>Hounds</li>
-        <ul>
-            <li>Beagle</li>
-            <li>Harrier</li>
-        </ul>   
-        
-        <li>Non-sportings</li>
-        <ul>
-            <li>Bulldog</li>
-            <li>Shiba Inu</li>
-        </ul>   
-        
-        <li>Working</li>
-        <ul>
-            <li>Greater Swiss Mountain Dog</li>
-            <li>Mastiff</li>
-        </ul>
-    
-        <li>Herding</li>
-        <ul>
-            <li>Canaan Dog</li>
-            <li>Collie</li>
-        </ul>
-        
-        <li>Toy</li>
-        <ul>
-            <li>Poodle (Toy)</li>
-            <li>Pug</li>
-        </ul>
-        
-    </ol>
-</body>
+<html>
+	<head>
+	   <meta charset="UTF-8">
+	   <title>CSS Specificity Exercise</title>
+       <link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<h2>Example of dog breeds</h2>
+		<hr>
+		<div class="div1" id="div1">
+		  <p>Golden retriever</p>
+		  <p id="x1">Labrador retriever</p>
+		  <p>Beagle</p>
+		  <p><span class="x2" id="x2">French bulldog</span></p>
+		  <span>Shiba Inu</span>
+		  <h4 style="color:gray;">Saint bernard</h4>
+			<span class="x2">Siberian husky</span>
+		</div>
+	</body>
 </html>
